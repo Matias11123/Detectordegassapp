@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "416324595719",
+    "firebase_url": "https://detectordegassapp-default-rtdb.firebaseio.com",
+    "project_id": "detectordegassapp",
+    "storage_bucket": "detectordegassapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416324595719:android:53a2ce35684db27abbfaa2",
+        "android_client_info": {
+          "package_name": "com.example.detectordegassapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3d1NpB7PdrAKr9iANc3byi-RCkOstG24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416324595719:android:1c78fe60b104ac63bbfaa2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3d1NpB7PdrAKr9iANc3byi-RCkOstG24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
