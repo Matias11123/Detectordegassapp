@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vincular dispositivo IoT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el ID de tu placa (ej. ESP32_01) para asociarla a tu cuenta."
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etDeviceId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del dispositivo"
+        android:inputType="text"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnLinkDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vincular dispositivo" />
+
+</LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center">
+    android:gravity="center_horizontal">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +12,15 @@
         android:text="Monitoreo de Gas GLP"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificando conexión..."
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:id="@+id/tvNivelGas"
@@ -20,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="Cargando nivel..."
         android:textSize="20sp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <TextView
         android:id="@+id/tvEstadoAlerta"
@@ -30,7 +38,14 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#4CAF50"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="32dp"/>
+
+    <Switch
+        android:id="@+id/switchActuador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Válvula de Corte / Alarma"
+        android:layout_marginBottom="32dp"/>
 
     <Button
         android:id="@+id/btnLogout"

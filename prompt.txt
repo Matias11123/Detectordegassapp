@@ -1,0 +1,11 @@
+Analiza la estructura actual de este proyecto Android en Kotlin con Firebase Realtime Database y Firebase Authentication. Necesito actualizar la app para cumplir con la rúbrica de Evaluación 3 y las observaciones previas, manteniendo intacta la conexión y autenticación actual:
+
+1. Vinculación de cuenta con dispositivo IoT (Seguridad ISO): Cuando el usuario inicie sesión o cree una cuenta nueva, verifica si tiene un dispositivo vinculado en /usuarios/{uid}/dispositivoId. Si no lo tiene, muéstrale un diálogo o pantalla para ingresar el ID de su placa (ej. ESP32_01) y guárdalo en Firebase. Toda la lectura y escritura debe apuntar únicamente a /dispositivos/{dispositivoId}/.
+
+2. Envío bidireccional e integridad de datos: En MainActivity y su XML, agrega un interruptor (Switch) o botón de control para activar/desactivar el actuador físico del ESP32 ('Válvula de Corte / Alarma'). Al accionarlo, envía un objeto con integridad de datos a /dispositivos/{dispositivoId}/actuador que incluya { "estado": true/false, "timestamp": ServerValue.TIMESTAMP, "usuarioUid": uid }.
+
+3. Almacenamiento temporal offline y sincronización automática: Habilita la persistencia local de Firebase Realtime Database (FirebaseDatabase.getInstance().setPersistenceEnabled(true) antes de cualquier referencia) y keepSynced(true) en el nodo del dispositivo, además de guardar el último estado localmente en SharedPreferences para que si no hay internet la app siga operando y sincronice automáticamente al recuperar conexión.
+
+4. Monitor de conexión y contingencia: Agrega un listener al nodo .info/connected de Firebase y muestra un TextView de estado en la interfaz (' En línea - Sincronizado' vs ' Sin red - Almacenamiento temporal activo').
+
+Muéstrame primero qué archivos vas a crear o modificar y aplica los cambios de forma limpia.
